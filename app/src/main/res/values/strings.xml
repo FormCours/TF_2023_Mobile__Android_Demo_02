@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Demo02_Interface</string>
+    <string name="title_main_app">Demo UI</string>
+    <string name="btn_demo_01">Btn 01</string>
+    <string name="btn_demo_02">Btn 02</string>
+    <string name="sub_title_grid">Grid</string>
+    <string name="sub_title_relative">Relative</string>
+    <string name="btn_pinky">🤍</string>
+    <string name="btn_nico">Nicolas</string>
+    <string name="text_color_ok">Choix de couleur ok ?</string>
+    <string name="text_info_pinky">Manifique bouton :</string>
+    <string name="btn_test">Test</string>
+</resources>

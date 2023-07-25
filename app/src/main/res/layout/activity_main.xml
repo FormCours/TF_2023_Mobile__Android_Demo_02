@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_main_app"
+        android:textSize="60sp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        android:fontFamily="cursive"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/btn_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_demo_01" />
+
+        <Space
+            android:layout_width="@dimen/btn_margin"
+            android:layout_height="0dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_demo_02" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_title_grid"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        />
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:columnCount="3">
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_test" />
+
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_test" />
+        <Button
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_test" />
+
+        <Button
+            android:layout_rowWeight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_test" />
+        <Button
+            android:layout_rowWeight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_test" />
+        <Button
+            android:layout_rowWeight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_test" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_title_relative"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/layout_margin">
+
+        <Button
+            android:id="@+id/btn_main_rose"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="@string/btn_pinky"
+            android:textSize="25sp"
+            android:backgroundTint="@color/pink"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <Button
+            android:id="@+id/btn_main_nico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_nico"
+            android:textColor="@color/pink"
+            android:backgroundTint="@color/cyan"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_color_ok"
+
+            android:layout_above="@id/btn_main_nico"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_info_pinky"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="@dimen/btn_margin"
+
+            android:layout_toStartOf="@id/btn_main_rose"
+            android:layout_alignTop="@id/btn_main_rose"
+            android:layout_alignBottom="@id/btn_main_rose"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
